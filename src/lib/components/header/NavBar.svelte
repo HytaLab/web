@@ -10,11 +10,11 @@
       </div>
       <ul
         tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow">
         <NavLinks mobile={true} />
       </ul>
     </div>
-    <a href="/" class="btn btn-ghost text-xl">HytaLab</a>
+    <a href="/" class="pl-5 btn-ghost text-xl font-bold">HytaLab</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
@@ -25,3 +25,9 @@
     <!-- Discord and GitHub links -->
   </div>
 </div>
+
+<style>
+  .dropdown {
+    backdrop-filter: blur(10px);
+  }
+</style>

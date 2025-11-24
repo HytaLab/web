@@ -1,6 +1,90 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+
+@plugin "daisyui/theme" {
+  name: "night";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: #17426f;
+  --color-base-200: #123259;
+  --color-base-300: #0b2b51;
+  --color-base-content: #56c6eb;
+  --color-primary: oklch(75.351% 0.138 232.661);
+  --color-primary-content: oklch(15.07% 0.027 232.661);
+  --color-secondary: oklch(68.011% 0.158 276.934);
+  --color-secondary-content: oklch(13.602% 0.031 276.934);
+  --color-accent: oklch(72.36% 0.176 350.048);
+  --color-accent-content: oklch(14.472% 0.035 350.048);
+  --color-neutral: #0b2b51;
+  --color-neutral-content: #56c6eb;
+  --color-info: oklch(68.455% 0.148 237.251);
+  --color-info-content: oklch(0% 0 0);
+  --color-success: oklch(78.452% 0.132 181.911);
+  --color-success-content: oklch(15.69% 0.026 181.911);
+  --color-warning: oklch(83.242% 0.139 82.95);
+  --color-warning-content: oklch(16.648% 0.027 82.95);
+  --color-error: oklch(71.785% 0.17 13.118);
+  --color-error-content: oklch(14.357% 0.034 13.118);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('../lib/fonts/Inter_18pt-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('../lib/fonts/Inter_18pt-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('../lib/fonts/Inter_18pt-Bold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('../lib/fonts/Inter_18pt-ExtraBold.ttf');
+  font-weight: 700;
+}
+
 html {
+    font-family: "Inter";
+    font-weight: 900;
     font-size: 24px;
+}
+
+html {
+  background-image: url('src/lib/assets/bg.jpg');
+}
+
+.glass-nav {
+    border: none;
+    backdrop-filter: blur(var(--glass-blur, 50px));
+    background-color: rgba(25, 89, 191, 0.41);
+    background-image: linear-gradient( 135deg, oklch(100% 0 0 / var(--glass-opacity, 30%)) 0%, oklch(0% 0 0 / 0%) 100% ), linear-gradient( var(--glass-reflect-degree, 100deg), oklch(100% 0 0 / var(--glass-reflect-opacity, 5%)) 25%, oklch(0% 0 0 / 0%) 25% );
+    box-shadow: 0 0 0 1px oklch(100% 0 0 / var(--glass-border-opacity, 20%)) inset, 0 0 0 2px oklch(0% 0 0 / 5%);
+    text-shadow: 0 1px oklch(0% 0 0 / var(--glass-text-shadow-opacity, 5%)) /* #000000 */;
+}
+
+.glass-blur {
+    border: none;
+    backdrop-filter: blur(var(--glass-blur, 5px));
+    background-color: #0000;
+    background-image: linear-gradient( 135deg, oklch(100% 0 0 / var(--glass-opacity, 30%)) 0%, oklch(0% 0 0 / 0%) 100% ), linear-gradient( var(--glass-reflect-degree, 100deg), oklch(100% 0 0 / var(--glass-reflect-opacity, 5%)) 25%, oklch(0% 0 0 / 0%) 25% );
+    box-shadow: 0 0 0 1px oklch(100% 0 0 / var(--glass-border-opacity, 20%)) inset, 0 0 0 2px oklch(0% 0 0 / 5%);
+    text-shadow: 0 1px oklch(0% 0 0 / var(--glass-text-shadow-opacity, 5%)) /* #000000 */;
 }
