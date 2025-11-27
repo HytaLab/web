@@ -1,1 +1,1 @@
-<p class="font-normal italic">We are not affiliated with Hytale or Hypixel Studios Canada Inc.</p>
+<p class="text-sm font-normal italic">We are not affiliated with Hytale or Hypixel Studios Canada Inc.</p>

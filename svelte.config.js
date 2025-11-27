@@ -9,7 +9,7 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: undefined,
+			fallback: '404.html',
 			precompress: false,
 			strict: true
 		}),
@@ -17,7 +17,7 @@ const config = {
 			'$components': 'src/lib/components'
 		},
 		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+			base: process.argv.includes('web') ? '' : process.env.BASE_PATH
 		}
 	},
 	extensions: ['.svelte', '.svx']

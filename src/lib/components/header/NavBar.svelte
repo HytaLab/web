@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import NavLinks from "./NavLinks.svelte";
 
 </script>
@@ -23,11 +23,11 @@
   </div>
   <div class="navbar-end">
     <!-- Discord and GitHub links -->
-  </div>
+  <!-- </div>
 </div>
 
 <style>
   .dropdown {
     backdrop-filter: blur(10px);
   }
-</style>
+</style> --> -->
