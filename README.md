@@ -1,11 +1,6 @@
 # HytaLab Web
 The public facing website for HytaLab's projects. All of our plugin/mod files and documentation are housed here. Made with SvelteKit and Tailwind CSS.
 
-## TODO
-- [ ] Replace daisyUI with just Tailwind
-- [ ] Make project cards for home page
-- [ ] Make projects area base (no releases integration yet) with downloads, wiki, source, etc.
-
 ## Developing
 
 Once you've installed dependencies with `bun install`, start a development server:
