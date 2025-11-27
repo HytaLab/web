@@ -66,10 +66,6 @@ html {
     font-size: 24px;
 }
 
-html {
-  background-image: url('src/lib/assets/bg.jpg');
-}
-
 a {
   text-decoration: underline dotted;
 }
